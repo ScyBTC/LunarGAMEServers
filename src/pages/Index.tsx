@@ -1,13 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroScene from "@/components/home/HeroScene";
+import FeaturedServers from "@/components/home/FeaturedServers";
+import AboutSection from "@/components/home/AboutSection";
+import GameShowcase from "@/components/home/GameShowcase";
+import EventsPreview from "@/components/home/EventsPreview";
+import FAQSection from "@/components/home/FAQSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main>
+      <HeroScene />
+      <GameShowcase />
+      <FeaturedServers />
+      <AboutSection />
+      <EventsPreview />
+      <FAQSection />
+    </main>
   );
 };
 
