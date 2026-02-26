@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <footer className="relative border-t border-border/20 overflow-hidden">
       {/* Subtle logo watermark */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 pointer-events-none opacity-[0.015]">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 pointer-events-none opacity-[0.02]">
         <img
           src="/brand/logo.png"
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-contain brightness-0 invert"
+          className="w-full h-full object-contain brightness-0 invert grayscale"
         />
       </div>
 

@@ -35,23 +35,23 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo mark + wordmark */}
           <Link to="/" className="flex items-center gap-3 group" aria-label="LunarGAMEServers home">
-            <div className="relative w-9 h-9 flex-shrink-0">
+            <div className="relative w-10 h-10 flex-shrink-0">
               {/* Glow behind logo */}
               <motion.div
-                className="absolute -inset-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md"
                 style={{
-                  background: "radial-gradient(circle, hsl(190 90% 55% / 0.25) 0%, transparent 70%)",
+                  background: "radial-gradient(circle, hsl(190 90% 55% / 0.4) 0%, transparent 70%)",
                 }}
               />
               <img
                 src="/brand/logo.png"
                 alt="LunarGAMEServers logo"
-                className="w-9 h-9 object-contain relative z-10 brightness-0 invert opacity-90 group-hover:opacity-100 transition-all duration-300 drop-shadow-[0_0_6px_hsl(190_90%_55%_/_0.3)]"
+                className="w-10 h-10 object-contain relative z-10 brightness-0 invert opacity-90 group-hover:opacity-100 transition-all duration-300 drop-shadow-[0_0_8px_hsl(190_90%_55%_/_0.5)] group-hover:scale-110"
               />
             </div>
             <span className="font-display font-bold text-base sm:text-lg tracking-tight">
               <span className="text-foreground">Lunar</span>
-              <span className="text-primary">GAME</span>
+              <span className="text-primary group-hover:text-primary/80 transition-colors">GAME</span>
               <span className="text-muted-foreground font-medium">Servers</span>
             </span>
           </Link>

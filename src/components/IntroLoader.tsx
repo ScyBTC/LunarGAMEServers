@@ -49,18 +49,18 @@ const IntroLoader = ({ onComplete }: { onComplete: () => void }) => {
           >
             {/* Halo ring */}
             <motion.div
-              className="absolute -inset-8 rounded-full"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 0.5, 0.3] }}
-              transition={{ duration: 1.5, delay: 0.3 }}
+              className="absolute -inset-12 rounded-full"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: [0, 0.4, 0.2], scale: [0.8, 1.1, 1] }}
+              transition={{ duration: 2, delay: 0.2 }}
               style={{
-                background: "radial-gradient(circle, transparent 50%, hsl(190 90% 55% / 0.1) 70%, transparent 85%)",
+                background: "radial-gradient(circle, transparent 40%, hsl(190 90% 55% / 0.15) 70%, transparent 90%)",
               }}
             />
             <img
               src="/brand/logo.png"
               alt="LunarGAMEServers"
-              className="w-20 h-20 md:w-28 md:h-28 object-contain brightness-0 invert drop-shadow-[0_0_30px_hsl(190_90%_55%_/_0.25)]"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain brightness-0 invert drop-shadow-[0_0_40px_hsl(190_90%_55%_/_0.4)]"
             />
           </motion.div>
 

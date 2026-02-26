@@ -123,43 +123,43 @@ const HeroScene = () => {
         >
           {/* Outer glow halo */}
           <motion.div
-            className="absolute -inset-16 md:-inset-24 rounded-full"
-            animate={shouldReduceMotion ? {} : { opacity: [0.2, 0.45, 0.2] }}
+            className="absolute -inset-24 md:-inset-32 rounded-full"
+            animate={shouldReduceMotion ? {} : { opacity: [0.3, 0.6, 0.3], scale: [1, 1.05, 1] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             style={{
               background:
-                "radial-gradient(circle, hsl(190 90% 55% / 0.08) 20%, hsl(190 80% 45% / 0.03) 50%, transparent 70%)",
+                "radial-gradient(circle, hsl(190 90% 55% / 0.12) 20%, hsl(190 80% 45% / 0.05) 50%, transparent 75%)",
             }}
           />
 
           {/* Inner glow ring */}
           <motion.div
-            className="absolute -inset-6 md:-inset-8 rounded-full"
-            animate={shouldReduceMotion ? {} : { opacity: [0.4, 0.7, 0.4] }}
+            className="absolute -inset-10 md:-inset-12 rounded-full"
+            animate={shouldReduceMotion ? {} : { opacity: [0.5, 0.8, 0.5] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             style={{
               background:
-                "radial-gradient(circle, transparent 55%, hsl(190 90% 55% / 0.12) 70%, transparent 85%)",
+                "radial-gradient(circle, transparent 55%, hsl(190 90% 55% / 0.15) 70%, transparent 85%)",
             }}
           />
 
           {/* Eclipse crescent mask */}
-          <div className="w-36 h-36 md:w-52 md:h-52 rounded-full relative overflow-hidden">
+          <div className="w-40 h-40 md:w-56 md:h-56 rounded-full relative overflow-hidden ring-1 ring-primary/10">
             {/* Ambient surface */}
             <div
               className="absolute inset-0 rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle at 40% 35%, hsl(190 30% 25% / 0.3) 0%, hsl(230 20% 10% / 0.2) 60%, transparent 80%)",
+                  "radial-gradient(circle at 40% 35%, hsl(190 30% 30% / 0.4) 0%, hsl(230 20% 12% / 0.3) 60%, transparent 80%)",
               }}
             />
 
             {/* The logo — the moon's core */}
-            <div className="absolute inset-0 flex items-center justify-center p-6 md:p-8">
+            <div className="absolute inset-0 flex items-center justify-center p-7 md:p-10">
               <img
                 src="/brand/logo.png"
                 alt="LunarGAMEServers — community game network"
-                className="w-full h-full object-contain brightness-0 invert opacity-70 drop-shadow-[0_0_20px_hsl(190_90%_55%_/_0.2)]"
+                className="w-full h-full object-contain brightness-0 invert opacity-80 drop-shadow-[0_0_25px_hsl(190_90%_55%_/_0.3)]"
               />
             </div>
 
@@ -168,7 +168,7 @@ const HeroScene = () => {
               className="absolute inset-0 rounded-full"
               style={{
                 background:
-                  "linear-gradient(145deg, transparent 30%, hsl(230 25% 5% / 0.7) 65%, hsl(230 25% 5% / 0.85) 80%)",
+                  "linear-gradient(145deg, transparent 25%, hsl(230 25% 5% / 0.75) 60%, hsl(230 25% 5% / 0.9) 85%)",
               }}
             />
           </div>

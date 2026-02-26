@@ -1,0 +1,29 @@
+LOGO (mandatory, integrated — not pasted)
+- Use the provided LunarGAMEServers logo as the official platform mark (do NOT generate a new logo).
+- Place the file at: /public/brand/logo.png (or logo.webp) and reference it everywhere via next/image.
+- If the file is missing, show a clear dev message telling me to add it to /public/brand/logo.png (do not replace with placeholders).
+
+SEAMLESS INTEGRATION RULES
+- The logo must feel “designed into” the UI:
+  - Match it to the lunar theme using subtle glow/halo, soft gradient masking, and correct spacing—not a raw flat stamp.
+  - Treat it like a “lunar sigil”: consistent sizing, clearspace, and a repeatable usage system.
+  - Never stretch or distort it; always preserve aspect ratio.
+  - Use it as a monochrome mark by default (white/silver), with optional accent glow (icy cyan or electric violet) on hover/active states.
+
+WHERE THE LOGO MUST APPEAR (designed, not generic)
+1) Navbar: left-aligned mark + wordmark text “LunarGAMEServers” (text is separate; don’t bake text into the image).
+   - Add a subtle animated “orbit” indicator that tracks the active nav item.
+2) Home hero: integrate the logo into the animated lunar scene:
+   - Logo is the “moon core” with orbit arcs and eclipse glow subtly animating around/behind it.
+   - The logo should feel like it emerges from the eclipse/gradient, not just sitting on top.
+3) Loading / intro sequence: logo centered with a short moonrise/eclipsing animation (1–2s) + skip option.
+4) Footer + favicon/OG assets:
+   - Generate favicon + apple touch icon from the logo.
+   - Use logo on OG image (simple, premium, lunar background).
+5) Background motif (very subtle):
+   - Use the logo as a low-opacity watermark or embossed pattern in 1–2 sections max (no clutter).
+
+ACCESSIBILITY / QUALITY
+- Provide alt text everywhere the logo is used.
+- Respect reduced-motion settings (disable heavy hero animation when prefers-reduced-motion is on).
+- Keep the logo crisp on all screens (prefer SVG conversion if possible; otherwise use a high-res PNG/WebP).
