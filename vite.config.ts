@@ -7,6 +7,7 @@ export default defineConfig(() => ({
   server: {
     host: "0.0.0.0",
     port: 5000,
+    allowedHosts: ["6755a5a7-0ff2-4217-bc3a-a015dd83ee50-00-2prwc2ww8r4g2.janeway.replit.dev"],
     hmr: {
       overlay: false,
     },
